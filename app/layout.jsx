@@ -1,5 +1,7 @@
 import React from 'react';
 import '@/assets/styles/globals.css';
+import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
 
 //Any file declared in the app folder, a page is essentially a React Component rendered on the server.
 // We can add such metadata for better SEO.
@@ -15,7 +17,9 @@ const MainLayout = ({ children }) => {
   return (
     <html lang="en">
       <body>
-        <div>{children}</div>
+        <Navbar />
+        <main>{children}</main>
+        <Footer />
       </body>
     </html>
   );
